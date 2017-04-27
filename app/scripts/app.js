@@ -107,6 +107,7 @@ angular
     })
       .state('dashboard.objectionPortal', {
         templateUrl:'views/pages/objectionPortal.html',
+        controller: 'objectionPortalCtrl',
         url:'/objectionPortal',
         resolve: {
             loadMyDirectives:function($ocLazyLoad){
@@ -114,6 +115,7 @@ angular
                 {
                     name:'sbAdminApp',
                     files:[
+                    'scripts/controllers/objectionPortalCtrl.js',
                     'scripts/directives/header/header.js',
                     'scripts/directives/header/header-notification/header-notification.js',
                     'scripts/directives/sidebar/sidebar.js',
